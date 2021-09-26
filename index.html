@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+
+
+  <link rel="stylesheet" href="./assets/css/all.css">
+  <style>
+    .header {
+      background-image: url('./assets/img/hotel.jpg');
+      height: 100vh;
+    }
+  </style>
+
+</head>
+
+<body class="has-background-light block is-family-primary">
+
+  <div class="header has-background-white">
+    <nav class="navbar is-transparent  has-text-primary-light" style="background-color: transparent;">
+      <div class="container">
+        <div class="navbar-brand">
+          <a class="navbar-item" href="https://bulma.io">
+            <img src="./assets/img/footer-logo.png" alt="Bulma: a modern CSS framework based on Flexbox">
+          </a>
+          <div class="navbar-burger" data-target="navbarExampleTransparentExample">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+
+        <div id="navbarExampleTransparentExample" class="navbar-menu">
+          <div class="navbar-start">
+            <a class="navbar-item" href="https://bulma.io/">
+              Home
+            </a>
+            <div class="navbar-item has-dropdown is-hoverable">
+              <a class="navbar-link" href="https://bulma.io/documentation/overview/start/">
+                Docs
+              </a>
+              <div class="navbar-dropdown is-boxed">
+                <a class="navbar-item" href="https://bulma.io/documentation/overview/start/">
+                  Overview
+                </a>
+                <a class="navbar-item" href="https://bulma.io/documentation/overview/modifiers/">
+                  Modifiers
+                </a>
+                <a class="navbar-item" href="https://bulma.io/documentation/columns/basics/">
+                  Columns
+                </a>
+                <a class="navbar-item" href="https://bulma.io/documentation/layout/container/">
+                  Layout
+                </a>
+                <a class="navbar-item" href="https://bulma.io/documentation/form/general/">
+                  Form
+                </a>
+                <hr class="navbar-divider">
+                <a class="navbar-item" href="https://bulma.io/documentation/elements/box/">
+                  Elements
+                </a>
+                <a class="navbar-item is-active" href="https://bulma.io/documentation/components/breadcrumb/">
+                  Components
+                </a>
+              </div>
+            </div>
+            <div class="navbar-item has-dropdown is-hoverable">
+              <a class="navbar-link" href="https://bulma.io/documentation/overview/start/">
+                Docs
+              </a>
+              <div class="navbar-dropdown is-boxed">
+                <a class="navbar-item" href="https://bulma.io/documentation/overview/start/">
+                  Overview
+                </a>
+                <a class="navbar-item" href="https://bulma.io/documentation/overview/modifiers/">
+                  Modifiers
+                </a>
+                <a class="navbar-item" href="https://bulma.io/documentation/columns/basics/">
+                  Columns
+                </a>
+                <a class="navbar-item" href="https://bulma.io/documentation/layout/container/">
+                  Layout
+                </a>
+                <a class="navbar-item" href="https://bulma.io/documentation/form/general/">
+                  Form
+                </a>
+                <hr class="navbar-divider">
+                <a class="navbar-item" href="https://bulma.io/documentation/elements/box/">
+                  Elements
+                </a>
+                <a class="navbar-item is-active" href="https://bulma.io/documentation/components/breadcrumb/">
+                  Components
+                </a>
+              </div>
+            </div>
+            <div class="navbar-item has-dropdown is-hoverable">
+              <a class="navbar-link" href="https://bulma.io/documentation/overview/start/">
+                Docs
+              </a>
+              <div class="navbar-dropdown is-boxed">
+                <a class="navbar-item" href="https://bulma.io/documentation/overview/start/">
+                  Overview
+                </a>
+                <a class="navbar-item" href="https://bulma.io/documentation/overview/modifiers/">
+                  Modifiers
+                </a>
+                <a class="navbar-item" href="https://bulma.io/documentation/columns/basics/">
+                  Columns
+                </a>
+                <a class="navbar-item" href="https://bulma.io/documentation/layout/container/">
+                  Layout
+                </a>
+                <a class="navbar-item" href="https://bulma.io/documentation/form/general/">
+                  Form
+                </a>
+                <hr class="navbar-divider">
+                <a class="navbar-item" href="https://bulma.io/documentation/elements/box/">
+                  Elements
+                </a>
+                <a class="navbar-item is-active" href="https://bulma.io/documentation/components/breadcrumb/">
+                  Components
+                </a>
+              </div>
+            </div>
+            <div class="navbar-item has-dropdown is-hoverable">
+              <a class="navbar-link" href="https://bulma.io/documentation/overview/start/">
+                Docs
+              </a>
+              <div class="navbar-dropdown is-boxed">
+                <a class="navbar-item" href="https://bulma.io/documentation/overview/start/">
+                  Overview
+                </a>
+                <a class="navbar-item" href="https://bulma.io/documentation/overview/modifiers/">
+                  Modifiers
+                </a>
+                <a class="navbar-item" href="https://bulma.io/documentation/columns/basics/">
+                  Columns
+                </a>
+                <a class="navbar-item" href="https://bulma.io/documentation/layout/container/">
+                  Layout
+                </a>
+                <a class="navbar-item" href="https://bulma.io/documentation/form/general/">
+                  Form
+                </a>
+                <hr class="navbar-divider">
+                <a class="navbar-item" href="https://bulma.io/documentation/elements/box/">
+                  Elements
+                </a>
+                <a class="navbar-item is-active" href="https://bulma.io/documentation/components/breadcrumb/">
+                  Components
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="navbar-end">
+            <div class="navbar-item">
+              <div class="field is-grouped">
+                <p class="control">
+                  <a class="bd-tw-button button" data-social-network="Twitter" data-social-action="tweet"
+                    data-social-target="https://bulma.io" target="_blank"
+                    href="https://twitter.com/intent/tweet?text=Bulma: a modern CSS framework based on Flexbox&amp;hashtags=bulmaio&amp;url=https://bulma.io&amp;via=jgthms">
+                    <span class="icon">
+                      <i class="fab fa-twitter"></i>
+                    </span>
+                    <span>
+                      Tweet
+                    </span>
+                  </a>
+                </p>
+                <p class="control">
+                  <a class="button is-primary"
+                    href="https://github.com/jgthms/bulma/releases/download/0.9.3/bulma-0.9.3.zip">
+                    <span class="icon">
+                      <i class="fas fa-download"></i>
+                    </span>
+                    <span>Download</span>
+                  </a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+  <div class="has-background-white ">
+    <div class="container block p-6">
+      <div class="columns is-vcentered ">
+        <div class="column">
+          <form class="has-text-centered ">
+            <div class="field ">
+              <label class=" subtitle">Hotel</label>
+              <div class="control">
+                <input class="input has-text-centered is-small" type="email" placeholder="Dubai">
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="column">
+          <form class="has-text-centered ">
+            <div class="field ">
+              <label class=" subtitle">CHECK IN</label>
+              <div class="control">
+                <input class="input has-text-centered is-small" type="date" placeholder="21 April">
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="column">
+
+          <form class="has-text-centered">
+            <div class="field ">
+              <label class=" subtitle">CHECK OUT</label>
+              <div class="control">
+                <input class="input has-text-centered is-small" type="date" placeholder="25 April">
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="column">
+
+          <form class="has-text-centered  ">
+            <div class="field ">
+              <label class=" subtitle">GUEST</label>
+              <div class="control">
+                <input class="input has-text-centered is-small" type="number" min="1" max="10" placeholder="1">
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="column has-text-centered is-vcentered mt-5">
+          <button class="button is-danger box has-text-centered is-small ">SEARCH</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container has-background-white mt-6">
+    <div class="columns p-5">
+      <div class="column is-half ">
+        <button class="button is-normal is-danger">All</button>
+        <button class="button is-normal is-light ">Popular</button>
+        <button class="button is-normal is-light ">Latest</button>
+        <button class="button is-normal is-light ">Trend</button>
+      </div>
+      <div class="column">
+        <div class="columns">
+          <div class="column is-offset-10">
+            <span class="icon ">
+              <i class="fa fa-align-justify"></i>
+            </span>
+            <span class="icon">
+              <i class="fa fa-align-center"></i>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  </div>
+  </div>
+  <div class="container block mt-6 ">
+    <div class="columns has-background-light is-multiline ">
+      <div class="column has-background-white p-5 m-4">
+        <div class="columns is-multiline ">
+          <div class="column is-full">
+
+            <div class="control has-icons-left ">
+              <input class="input is-normal has-background-light" type="text" placeholder="Search here...">
+              <span class="icon is-normal is-left">
+                <i class="fas fa-search"> |</i>
+              </span>
+            </div>
+          </div>
+          <div class="column is-full">
+            <div class="columns">
+              <div class="column"><span class="title is-5 ">Latest Filter</span></div>
+              <div class="column"> <span class="icon is-small is-right "><i class="fa fa-align-center"></i></span>
+              </div>
+            </div>
+          </div>
+          <div class="column is-full">
+            <h6 class="title is-5">District</h6>
+            <input type="checkbox" name="all" id="all">
+            <label for="all" class="checkbox">All</label><br>
+            <input type="checkbox" name="la" id="la">
+            <label for="la">La Defance</label><br>
+            <input type="checkbox" name="paris" id="paris">
+            <label for="paris"> Paris Center</label><br>
+            <input type="checkbox" name="latin" id="latin">
+            <label for="latin">Latin</label><br>
+          </div>
+          <div class="column is-full">
+            <h6 class="title is-5">Facilty</h6>
+            <input type="checkbox" name="restaraunt">
+            <label for="restaraunt">Restaraunt</label><br>
+            <input type="checkbox" name="wi-fi">
+            <label for="wi-fi">Wi-Fi</label><br>
+            <input type="checkbox" name="spa">
+            <label for="spa">Spa & Salon</label><br>
+            <input type="checkbox" name="pet">
+            <label for="pet">Pet Allowed</label><br>
+            <input type="checkbox" name="parking">
+            <label for="parking">Parking</label><br>
+            <input type="checkbox" name="swimming">
+            <label for="swimming">Swimming</label><br>
+            <input type="checkbox" name="fitness">
+            <label for="fitness">Fitness Center</label><br>
+            <h6 class="title is-5 ">Star Category</h6>
+            <input type="checkbox" name="five">
+            <label for="five" class="has-text-warning">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <span>(1225)</span>
+            </label><br>
+            <input type="checkbox" name="four">
+            <label for="four" class="has-text-warning">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+              <span>(30)</span>
+            </label><br>
+            <input type="checkbox" name="three">
+            <label for="three" class="has-text-warning">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+              <i class="far fa-star"></i>
+              <span>(25)</span>
+            </label><br>
+            <input type="checkbox" name="two">
+            <label for="two " class="has-text-warning ">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+              <i class="far fa-star"></i>
+              <i class="far fa-star"></i>
+              <span>(1)</span>
+            </label><br>
+
+            <h6>Price Range</h6>
+            <input class="slider is-fullwidth" step="1" min="0" max="100" value="50" type="range">
+
+
+            <h6>Host Language</h6>
+            <input type="checkbox" name="english" id="english">
+            <label for="english">English</label><br>
+            <input type="checkbox" name="sign" id="">
+            <label for="sign">Sign Language</label><br>
+            <input type="checkbox" name="italiano" id="">
+            <label for="italiano">Italiano</label><br>
+            <input type="checkbox" name="suomi" id="">
+            <label for="suomi">Suomi</label><br>
+            <input type="checkbox" name="espanol" id="">
+            <label for="espanol">Espanol</label><br>
+            <input type="checkbox" name="french" id="">
+            <label for="french">French</label><br>
+            <input type="checkbox" name="arabic" id="">
+            <label for="arabic">Arabic</label><br>
+            <div>
+              <h5><span>i</span> Need Help</h5>
+              <h4>567-67-28</h4>
+              <p>Monday to Friday 9.00am - 7.30pm</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <div class="card">
+          <div class="card-image">
+            <figure class="image is-4by3">
+              <img src="./assets/img/hotel-card.jpg" alt="Placeholder image">
+            </figure>
+          </div>
+          <div class="card-content">
+
+            <div class="content">
+              <h2> Venetion</h2>
+              <span><i class="fas fa-map-marker-alt">
+                </i>New-York</span>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim quo magni earum amet
+                ipsam...</p>
+            </div>
+
+            <div class="card-stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+              <span> 2612 review</span>
+
+            </div>
+            <div class="card-end">
+              <p><span>$1300</span> $1245 <span class="">Swimming</span> <span class="end-span">Parking</span> </p>
+            </div>
+          </div>
+        </div>
+        <div class="card mt-5">
+          <div class="card-image">
+            <figure class="image is-4by3">
+              <img src="./assets/img/hotel-card.jpg" alt="Placeholder image">
+            </figure>
+          </div>
+          <div class="card-content">
+
+            <div class="content">
+              <h2> Venetion</h2>
+              <span><i class="fas fa-map-marker-alt">
+                </i>New-York</span>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim quo magni earum amet
+                ipsam...</p>
+            </div>
+
+            <div class="card-stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+              <span> 2612 review</span>
+
+            </div>
+            <div class="card-end">
+              <p><span>$1300</span> $1245 <span class="">Swimming</span> <span class="end-span">Parking</span> </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <div class="card">
+          <div class="card-image">
+            <figure class="image is-4by3">
+              <img src="./assets/img/hotel-card.jpg" alt="Placeholder image">
+            </figure>
+          </div>
+          <div class="card-content">
+
+            <div class="content">
+              <h2> Venetion</h2>
+              <span><i class="fas fa-map-marker-alt">
+                </i>New-York</span>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim quo magni earum amet
+                ipsam...</p>
+            </div>
+
+            <div class="card-stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+              <span> 2612 review</span>
+
+            </div>
+            <div class="card-end">
+              <p><span>$1300</span> $1245 <span class="">Swimming</span> <span class="end-span">Parking</span> </p>
+            </div>
+          </div>
+        </div>
+        <div class="card mt-5">
+          <div class="card-image">
+            <figure class="image is-4by3">
+              <img src="./assets/img/hotel-card.jpg" alt="Placeholder image">
+            </figure>
+          </div>
+          <div class="card-content">
+
+            <div class="content">
+              <h2> Venetion</h2>
+              <span><i class="fas fa-map-marker-alt">
+                </i>New-York</span>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim quo magni earum amet
+                ipsam...</p>
+            </div>
+
+            <div class="card-stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+              <span> 2612 review</span>
+
+            </div>
+            <div class="card-end">
+              <p><span>$1300</span> $1245 <span class="">Swimming</span> <span class="end-span">Parking</span> </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <div class="card">
+          
+          <div class="card-image">
+            
+            <figure class="image is-4by3">
+              
+              <img src="./assets/img/hotel-card.jpg" alt="Placeholder image">
+            </figure>
+          </div>
+          <div class="card-content">
+
+            <div class="content">
+              <h2> Venetion</h2>
+              <span><i class="fas fa-map-marker-alt">
+                </i>New-York</span>
+              <p class="has-text-grey-lighter">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim quo magni earum amet
+                ipsam...</p>
+            </div>
+
+            <div class="card-stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+              <span> 2612 review</span>
+
+            </div>
+            <div class="card-end">
+              <p><span>$1300</span> $1245 <span class="">Swimming</span> <span class="end-span">Parking</span> </p>
+            </div>
+          </div>
+        </div>
+        <div class="card mt-5 ">
+          <div class="card-image">
+            <figure class="image is-4by3">
+              <img src="./assets/img/hotel-card.jpg" alt="Placeholder image">
+            </figure>
+          </div>
+          <div class="card-content">
+
+            <div class="content">
+              <h2> Venetion</h2>
+              <span><i class="fas fa-map-marker-alt">
+                </i>New-York</span>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim quo magni earum amet
+                ipsam...</p>
+            </div>
+
+            <span class="has-text-warning is-size-7">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+            </span>
+              <span class="is-size-7"> 2612 review</span>
+
+            
+            
+              <p><span class="is-size-7 is-underlined">$1300</span> <span class="has-text-weight-bold"> $1245</span> </p> <p> <span class="tag is-link is-light">Swimming</span> <span class="tag is-link is-light">Parking</span> </p>
+            
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+
+  </div>
+  <!-- pagination -->
+  <div class="container">
+    <div class="columns">
+      <div class="column is-offset-5">
+        <nav class="pagination" role="navigation" aria-label="pagination">
+          <a class="pagination-previous">Previous</a>
+          <a class="pagination-next">Next page</a>
+          <ul class="pagination-list">
+            <li>
+              <a class="pagination-link" aria-label="Goto page 1">1</a>
+            </li>
+            <li>
+              <span class="pagination-ellipsis">&hellip;</span>
+            </li>
+            <li>
+              <a class="pagination-link" aria-label="Goto page 45">45</a>
+            </li>
+            <li>
+              <a class="pagination-link is-current" aria-label="Page 46" aria-current="page">46</a>
+            </li>
+            <li>
+              <a class="pagination-link" aria-label="Goto page 47">47</a>
+            </li>
+            <li>
+              <span class="pagination-ellipsis">&hellip;</span>
+            </li>
+            <li>
+              <a class="pagination-link" aria-label="Goto page 86">86</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <!-- footer -->
+  <div class="has-background-black pt-6 pb-6 mt-5 ">
+    <div class="container">
+      <div class="columns">
+        <div class="column is-2">
+          <div>
+            <img src="./assets/img/footer-logo.png" alt="logo">
+            <p class="is-size-6 mt-4">Lorem Ipsum is simply dummy text</p>
+            <ul>
+              <li><i class="fas fa-map-marker-alt mt-4 "></i> A-32, Albany, Newyork.</li>
+              <li><i class="fas fa-phone-alt mt-4"></i> 518 - 457 - 5181</li>
+              <li><i class="fas fa-envelope mt-4"></i> Contact@Gmail.Com</li>
+            </ul>
+          </div>
+
+        </div>
+        <div class="column is-2">
+          <p class="is-size-4 mb-6 mb-6 is-size-5 has-text-white has-text-weight-bold ">About</p>
+            <ul>
+              <li><a href="#" class = "has-text-grey-dark" >About us</a></li>
+              <li><a href="#" class = "has-text-grey-dark">FAQ</a></li>
+              <li><a href="#" class = "has-text-grey-dark">Login</a></li>
+              <li><a href="#" class = "has-text-grey-dark">Register</a></li>
+              <li><a href="#" class = "has-text-grey-dark">Terms &amp; co.</a></li>
+              <li><a href="#" class = "has-text-grey-dark">Privacy</a></li>
+              <li><a href="#" class = "has-text-grey-dark">Support</a></li>
+            </ul>
+        </div>
+        <div class="column">
+          <h5 class="mb-6 mb-6 is-size-5 has-text-white has-text-weight-bold">Location</h5>
+          <div class="map"><iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d194113.93771672965!2d70.60671927648042!3d40.51882187146705!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ba938963a9b4bd%3A0xf54e457766d8a9e0!2z0KTRg9GA0LrQsNGC0YHQutC40Lkg0YDQsNC50L7QvSwg0KPQt9Cx0LXQutC40YHRgtCw0L0!5e0!3m2!1sru!2s!4v1627320492130!5m2!1sru!2s"
+              width="250" height="180"  allowfullscreen="" loading="lazy"></iframe></div>
+        </div>
+        <div class="column is-2">
+          <h5 class="mb-6 is-size-5 has-text-white has-text-weight-bold">Useful Links</h5>
+          <ul>
+            <li><a href="#" class = "has-text-grey-dark">Home</a></li>
+            <li><a href="#" class = "has-text-grey-dark">Our vehical</a></li>
+            <li><a href="#" class = "has-text-grey-dark">Latest video</a></li>
+            <li><a href="#" class = "has-text-grey-dark">Services</a></li>
+            <li><a href="#" class = "has-text-grey-dark">Booking deal</a></li>
+            <li><a href="#" class = "has-text-grey-dark">Emergency call</a></li>
+            <li><a href="#" class = "has-text-grey-dark">Mobile app</a></li>
+          </ul>
+        </div>
+        <div class="column">
+          <h5 class="mb-6 is-size-5 has-text-white has-text-weight-bold">News Topcs</h5>
+          <article class="media">
+            
+            <figure class="media-left">
+              <p class="image is-96x96">
+                <img src="./assets/img/news.jpg">
+              </p>
+            </figure>
+            <div class="media-content">
+              <div class="content">
+               <strong class="has-text-white">Recent News</strong> 
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing...</p>
+              </div>
+             
+            </div>
+          </article>
+            <article class="media" style="border:none">
+            
+              <figure class="media-left">
+                <p class="image is-96x96">
+                  <img src="./assets/img/news.jpg">
+                </p>
+              </figure>
+              <div class="media-content">
+                <div class="content">
+                 <strong class="has-text-white">Recent News</strong> 
+                 <p>Lorem ipsum dolor sit amet consectetur adipisicing...</p>
+                </div>
+               
+              </div></article>
+        </div>
+        </div>
+      </div>
+    </div>
+    <!-- footer-2 -->
+    <div class="has-background-black-ter pt-5 pb-4">
+      <div class="container">
+        <div class="columns ">
+          <div class="column ">
+            <ul class="columns ">
+              <li ><a class="has-text-light" href="#"><i class="fab fa-facebook-f pr-4"></i></a></li>
+              <li><a class="has-text-light" href="#"><i class="fab fa-instagram pr-4"></i></a></li>
+              <li><a class="has-text-light" href="#"><i class="fab fa-twitter pr-4"></i></a></li>
+              <li><a class="has-text-light" href="#"><i class="fab fa-google pr-4"></i></a></li>
+            </ul>
+          </div>
+        
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+
+
+</html>
